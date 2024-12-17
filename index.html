@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Contacts</a>
+            <a href="">Info</a>
+        </nav>
+    </header>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <p>Deseja ativar os efeitos sonoros para uma experiência completa?</p>
+            <button id="accept">Sim</button>
+            <button id="decline">Não</button>
+        </div>
+    </div>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="image/myPicture.jpg">
+                <div class="content">
+                    <div class="author">GUSTADEV</div>
+                    <div class="title">GUSTAVO</div>
+                    <div class="topic">OLIVEIRA</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>LIVE VIEW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <video src="/image/New The Last small.mp4" autoplay muted loop controls></video>
+                <audio src="/audio/001 - The Last of Us (Main Menu).mp3" autoplay loop></audio>
+                <div class="content">
+                    <div id="title" class="title">THE</div>
+                    <div id="title" class="title">LAST</div>
+                    <div id="title" class="topic">CODE</div>
+                    <div class="des">
+                        In a world ravaged by chaos, where civilization has fallen, your only weapon is your mind. The Last Code is a gripping mini-game inspired by The Last of Us, blending survival and programming. Solve logic puzzles, crack codes, and navigate a post-apocalyptic digital landscape where every decision matters.
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>LIVE VIEW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <video src="/image/Pemphone.mp4" autoplay muted loop controls></video>
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>LIVE VIEW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img3.jpg">
+                <div class="content">
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>LIVE VIEW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="image/img4.jpg">
+                <div class="content">
+                    <div class="author">LUNDEnfdjnvneijneincienV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">ANIMAL</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+                    </div>
+                    <div class="buttons">
+                        <button>SEE MORE</button>
+                        <button>LIVE VIEW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+            <div class="item">
+                <img src="image/vices thumb.jpg">
+            </div>
+            <div class="item">
+                <img src="image/olivertech.png">
+            </div>
+            <div class="item">
+                <img src="image/the last code thumb.jpg">
+            </div>
+            <div class="item">
+                <img src="image/BGPhone.png">
+            </div>
+            <div class="item">
+                <img src="image/the last code thumb.jpg">
+            </div>
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
