@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
     font-family: 'FonteTheLastOfUs'; /* Nome que você dará à fonte */
@@ -132,6 +134,7 @@ audio {
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
+    position: relative;
 }
 .carousel .list .item .buttons button{
     border: none;
@@ -139,6 +142,22 @@ audio {
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    position: relative; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden; 
+}
+.carousel .list .item .buttons button img {
+    position: absolute;
+    width: 1.6rem; 
+    height: 1.6rem; 
+}
+#fontVices{
+    color: #8172ba;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .carousel .list .item .buttons button:nth-child(2){
     background-color: transparent;
@@ -195,6 +214,9 @@ audio {
 .arrows button{
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: #eee4;
     border: none;
@@ -204,7 +226,7 @@ audio {
     transition: .5s;
 }
 .arrows button:hover{
-    background-color: #fff;
+    background-color: #acacac;
     color: #000;
 }
 
@@ -244,6 +266,9 @@ audio {
 }
 .carousel .list .item:nth-child(1) .content .buttons{
     animation-delay: 1.8s!important;
+}
+.carousel .list .item:nth-child(1) .content .buttons button img {
+    animation: 1.8s linear forwards;
 }
 /* create animation when next click */
 .carousel.next .list .item:nth-child(1) img{
