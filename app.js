@@ -8,6 +8,12 @@ let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
 
+
+window.onload = function() {
+    document.getElementById('loader').style.display = 'none';
+};
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const video = document.querySelector('video');
     if (video) {
