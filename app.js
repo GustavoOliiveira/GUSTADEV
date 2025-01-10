@@ -42,75 +42,7 @@ function showSlider(type) {
     }, timeRunning);
 }
 
-document.body.addEventListener('click', () => {
-    document.querySelector('audio').play();
-}, { once: true });
 
-const modal = document.getElementById("modal");
-const acceptButton = document.getElementById("accept");
-const declineButton = document.getElementById("decline");
-const items = document.querySelectorAll(".carousel .list .item");
-let currentAudio = null;
-let soundEnabled = localStorage.getItem("soundEnabled") === "true";
-
-// Exibe o modal na primeira vez que o site é acessado
-window.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("soundEnabled") === null) {
-        modal.classList.remove("hidden");
-    } else {
-        initializeAudio();
-    }
-});
-
-// Configuração de escolha do usuário
-acceptButton.addEventListener("click", () => {
-    soundEnabled = true;
-    localStorage.setItem("soundEnabled", "true");
-    modal.classList.add("hidden");
-    initializeAudio();
-});
-
-declineButton.addEventListener("click", () => {
-    soundEnabled = false;
-    localStorage.setItem("soundEnabled", "false");
-    modal.classList.add("hidden");
-});
-
-// Inicializa o controle do áudio
-function initializeAudio() {
-    items.forEach((item, index) => {
-        const audio = item.querySelector("audio");
-        if (audio) {
-            audio.loop = true;
-            audio.pause();
-        }
-
-        // Ativa o áudio quando o item correspondente está ativo
-        item.addEventListener("mouseenter", () => {
-            if (soundEnabled && audio) {
-                stopCurrentAudio();
-                currentAudio = audio;
-                audio.play();
-            }
-        });
-
-        // Para o áudio ao sair do item
-        item.addEventListener("mouseleave", () => {
-            if (audio) {
-                audio.pause();
-                audio.currentTime = 0; // Reinicia o áudio
-            }
-        });
-    });
-}
-
-// Para o áudio atualmente ativo
-function stopCurrentAudio() {
-    if (currentAudio) {
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-    }
-}
 
 // Controle do carrossel para alterar o item ativo
 let currentIndex = 0;
