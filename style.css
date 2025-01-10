@@ -390,3 +390,37 @@ audio {
         font-size: 30px;
     }
 }
+
+@media (max-width: 400px){
+    .thumbnail .item {
+        width: 100px;
+        height: 140px;
+    }
+    .carousel .list .item .author {
+        font-size: 8px;
+    }
+    .carousel .list .item .title {
+        font-size: 10px;
+    }
+    .carousel .list .item .topic {
+        font-size: 40px;
+    }   
+    .carousel .list .item .des {
+        font-size: 8px;
+    }
+    #title{
+        font-size: 60px;
+    }
+    #topic{
+        font-size: 60px;
+    }
+    @keyframes outFrame{
+        to{
+            width: 100px;
+            height: 140px;
+            bottom: 50px;
+            left: 50%;
+            border-radius: 20px;
+        }
+    }
+  }

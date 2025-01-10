@@ -42,8 +42,6 @@ function showSlider(type) {
     }, timeRunning);
 }
 
-
-
 // Controle do carrossel para alterar o item ativo
 let currentIndex = 0;
 
