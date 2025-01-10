@@ -8,6 +8,13 @@ let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
 let timeDom = document.querySelector('.carousel .time');
 
+document.addEventListener('DOMContentLoaded', function () {
+    const video = document.querySelector('video');
+    if (video) {
+      video.play();
+    }
+  });
+
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 3000; // Tempo de transição entre os slides
 
