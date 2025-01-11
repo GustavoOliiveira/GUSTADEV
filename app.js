@@ -1,4 +1,3 @@
-// step 1: get DOM
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 3000; // Tempo de transição entre os slides
+let timeRunning = 3000; 
 
 nextDom.onclick = function() {
     showSlider('next');

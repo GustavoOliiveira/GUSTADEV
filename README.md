@@ -21,22 +21,13 @@ O objetivo deste projeto é mostrar meus trabalhos e habilidades para possíveis
 - 🎨 Uso de animações e interatividade para melhorar a experiência do usuário.  
 - 🌟 Criação de uma identidade visual única.  
 
-## 🖼️ Visual do Projeto
-
-![GUSTADEV Screenshot](/fotos/gitHubView.png)
-
-> **Nota:** Substitua o `/fotos/gitHubView.png` pelo caminho correto da imagem ou do GIF quando disponível.
-
 ## 🌐 Acesse o Projeto Online
 
 Você pode visitar o **GUSTADEV** diretamente pelo link abaixo:
 
-🔗 [Clique aqui para acessar o site](https://www.seusite.com)
+🔗 [Clique aqui para acessar o site](https://gustadev.netlify.app/)
 
-## 🚀 Como Executar Localmente
 
-Se você quiser explorar o código do site ou executar localmente, siga os passos abaixo:  
+## 🖼️ Visual do Projeto
 
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/seu-usuario/gustadev.git
+![GUSTADEV Screenshot](/image/ftReadme.png)
